@@ -1,8 +1,12 @@
-## Welcome to GitHub Pages
+## What is a Spline?
 
-You can use the [editor on GitHub](https://github.com/psdev1/splines/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+* A continuous curve that passes through a set of points
+* 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## How Can Splines Be Utilized in the Context of Robotics?
+
+We can first look at ways for robots to travel between between two points.  There are a quite of few methods that exist for robots to travel between points.  A simple approach is to use a sequence of straight lines and turns that the robot travels on.  This is a viable approach in a few cases 
+
 
 ### Markdown
 
