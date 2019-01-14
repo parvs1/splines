@@ -46,7 +46,7 @@ Now this example calculation is great, but for a robot with a motion profile, th
 
 Here is a video of our robot moving on a spline:
 
-https://psdev1.github.io/splines/cubic_splines.mp4
+[Video](https://psdev1.github.io/splines/cubic_splines.mp4)
 
 ## Conclusion
 Using splines for robot navigation is extremely worthwhile and increases the effenciency of the robot in completing tasks and manuevering around places.  When speed is key, splines are the way to go in robot movment.  However, having the robot follow splines perfectly is exceptionally tricky.  For the following to be accurate, there are other coeficcients regarding the physical constraints of the robot and also feedback variables which have to be tuned to work perfectly.  Tuning these can alone take up many hours to make it work great, so that is a challenge that I encountered.  The other hard part was implementing a trapezoidal motion profile for the robot and also position tracking of the robot at the same time.  Since all of those components had to work in order for the robot to follow the spline properly, it took more time to develop and complete the project.  
