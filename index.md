@@ -5,6 +5,8 @@
 * Can have polynomials of differing degrees
 * Parametric curve and can be interpolated
 
+![Spline Picture](spline.png)
+
 ## How Can Cubic Splines Splines Be Interpolated?
 
 * In this project, I will specifically be using and talking about cubic splines
@@ -14,6 +16,8 @@
 * To ensure the curve is always continuous, the derivative and second derivative have to equal each other at the connection points between the subintervals
 * The endpoints can either have specific values of the second derivatives it has to equal to, which is a clamped spline
 * It could also have the second derivative equal to 0, which is a natural spline
+
+![Natural Spline Picture](clamped_spline.png)
 
 ## How Can Splines Be Utilized in the Context of Robotics?
 
