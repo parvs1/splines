@@ -38,13 +38,13 @@ Here is an example calculation of interpolating a spline.  Here, we interpolate 
 ![Calc Part 1](calcs1.jpg)
 ![Calc Part 2](calcs2.jpg)
 
-![Matrix](matrix.png)
+![Matrix](matrix.PNG)
 
 
 
 Now this example calculation is great, but for a robot with a motion profile, the spline should be parameterized for a function of time, instead of the x coordinate.  So, there will be two equations, one for the x position on the field and the other one for the y position.  So, I put an implementation for this into place in my Java code.  I used a framework which allowed me to create a spline, parameterized for time based off of the robot's physical constraints (max velocity, max acceleration, etc.), and then I also put in code for the robot to determine its absolute position on a coordinate field.  I made the robot follow a trajectory with the code posted below.
 
-![Code Snippet](trajectory_shot.png)
+![Code Snippet](trajectory_shot.PNG)
 
 ## Conclusion
 Using splines for robot navigation is extremely worthwhile and increases the effenciency of the robot in completing tasks and manuevering around places.  When speed is key, splines are the way to go in robot movment.  However, having the robot follow splines perfectly is exceptionally tricky.  For the following to be accurate, there are other coeficcients regarding the physical constraints of the robot and also feedback variables which have to be tuned to work perfectly.  Tuning these can alone take up many hours to make it work great, so that is a challenge that I encountered.  The other hard part was implementing a trapezoidal motion profile for the robot and also position tracking of the robot at the same time.  Since all of those components had to work in order for the robot to follow the spline properly, it took more time to develop and complete the project.  
