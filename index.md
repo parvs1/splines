@@ -15,37 +15,20 @@
 
 ## How Can Splines Be Utilized in the Context of Robotics?
 
-We can first look at ways for robots to travel between between two points.  There are a quite of few methods that exist for robots to travel between points.  A simple approach is to use a sequence of straight lines and turns that the robot travels on.  This is a viable approach in a few cases 
+We can first look at ways for robots to travel between between two points.  There are a quite of few methods that exist for robots to travel between points.  A simple approach is to use a sequence of straight lines and turns that the robot travels on.  To go accurately to the points with the straight lines and turns, the robot can slow down as it reaches the desired end point using a PID controller (which was actually my project last year).  This is a viable approach in many cases for traveling to a point with a robot.
+
+However, when a high speed is used with these traditional methods, the robot typically falters due to many limitations ranging from effeciency losses, the higher acceleration causing the wheels to slip, and outside forces like the force of friction.
+
+A proposed solution to this problem would to create a motion profile for the robot based off of its physical constraints.  This ramps up and ramps down the speed of the robot; it makes the robot follow a trapezoidal profile which is pictured below.  
+
+However, this is only some of the solution to the problem, and alone, it even exacerbates the issue that we were trying to solve in making the robot faster; this is because a full acceleration and deceleration cycle is needed for every movment of the robot.  A way to combat this problem is by introducing splines.  With splines, the translation of the robot in the x and y direction is taken care of, 
 
 
-### Markdown
+## Math
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Conclusion
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Reflection
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/psdev1/splines/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
