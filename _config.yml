@@ -1,2 +1,4 @@
 theme: jekyll-theme-cayman
 title: "Cubic Spline Interpolation and Application in Robotics"
+github:
+  is_project_page: false
